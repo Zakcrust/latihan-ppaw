@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+body {
+    background-color: lightblue;
+    color: rebeccapurple;
+    background-image: url("https://i.kym-cdn.com/photos/images/original/001/389/843/de0.jpeg")
+}
+
+body nav a{
+    color: rebeccapurple;
+}
+</style>
+
+</head>
+<body>
+
+<audio id="dor" src="dor.wav"></audio>
+    <nav><a href="#">first nav</a>
+         <a href="#">second nav</a>
+         <a href="#">third nav</a>
+    </nav>
+    <h1>My First Heading</h1>
+    <h2>My First Heading</h2>
+    <h3>My First Heading</h3>
+    <h4>My First Heading</h4>
+    <h5>My First Heading</h5>
+    <h6>My First Heading</h6>
+    <p>My First Paragraph</p>
+    <a onclick="playAudio()" href="helloworld.html" target="_blank"><img src="rambro.png" width="128px" height="128px" alt="RAAAMBRO"></a>
+
+<iframe width="256" height="256" src="https://www.youtube.com/embed/N_x72hA7_SY" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<script>
+    var gunshot = document.getElementById("dor");
+
+    function playAudio()
+    {
+        gunshot.play();
+    }
+
+</script>
+
+</body>
+</html>
