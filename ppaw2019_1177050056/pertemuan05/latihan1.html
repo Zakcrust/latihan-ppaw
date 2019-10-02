@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        var text;
+        $(document).ready(function () {
+            $("p").click(function () {
+                $(this).hide();
+            });
+        });
+        $(document).ready(function () {
+                $("h5").dblclick(function () {
+                    $("p").show();
+                });
+            });
+        $(document).ready(function () {
+                $("a").mouseleave(function () {
+                    $(this).show();
+                });
+            });
+        $(document).ready(function () {
+                $("a").mouseenter(function () {
+                    $(this).hide();
+                });
+            });
+        $(document).ready(function () {
+                $("#btn1").click(function () {
+                    alert(text);
+                });
+                $("#btn2").click(function () {
+                    text = $("#nama").val();
+                });
+            });
+    </script>
+
+
+</head>
+
+<body>
+    <h5>If you double-click on me, everything will appear</h5>
+    <p>If you click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+    <br>
+    <a href="#">aaaa</a><br>
+    <a href="#">aaaa</a><br>
+    <a href="#">aaaa</a><br>
+    <a href="#">aaaa</a>
+    <br>
+    <button id="btn1">Get Nama</button><br>
+    <input type="text"  id="nama" name="nama">
+    <button id="btn2">Set Nama</button>
+</body>
+
+</html>
